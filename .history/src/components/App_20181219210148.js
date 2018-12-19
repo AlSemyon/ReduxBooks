@@ -5,5 +5,4 @@ const App = () =>
     <div className="container">
       <Books/>
     </div>
-    
 export default App;
