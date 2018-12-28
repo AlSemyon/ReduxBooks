@@ -1,6 +1,6 @@
 import C from '../constants'
 
-export const selectBook = (book) => ({
+export default selectBook = (book) => ({
     type: C.SELECT_BOOK,
     payload: {book}
 })

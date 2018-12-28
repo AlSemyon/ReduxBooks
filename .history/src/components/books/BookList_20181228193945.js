@@ -7,20 +7,16 @@ const BookList = ({books, selectBook}) =>
     <div>
         <ul className="list-group">
             {books.map(book =>
-                <li className="list-group-item"
-                    onClick={() => selectBook(book)}
-                    key={book.id}>{book.title}
-                </li>)
+                <li className="list-group-item" key={book.id}>{book.title}</li>)
             }
         </ul>
     </div>
 
 BookList.PropTypes = {
     books: PropTypes.array,
-    selectBook: PropTypes.func.isRequired,
+    selectBook: PropTypes.func.isRequired
 }
 
 export default connect(
-    ({books}) => ({books}),
-    {selectBook}
+    ({books}) => ({books})
 )(BookList)

@@ -8,7 +8,6 @@ const BookList = ({books, selectBook}) =>
         <ul className="list-group">
             {books.map(book =>
                 <li className="list-group-item"
-                    onClick={() => selectBook(book)}
                     key={book.id}>{book.title}
                 </li>)
             }

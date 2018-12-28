@@ -4,12 +4,8 @@ import C from '../constants';
 const defaultBook = defaultBooks.length > 0 ? defaultBooks[0] : null;
 
 const activeBook = (state = defaultBook, action) => {
-    const {type, payload} = action; 
-    switch(type) {
-        case C.SELECT_BOOK:
-            return payload.book;
-        default:
-            return state;
+    switch(action.type) {
+        case
     }
 }
 

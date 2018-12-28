@@ -4,5 +4,5 @@ import categoryBook from './categoryBook';
 import activeBook from './activeBook';
 
 export default combineReducers({
-    books, categoryBook, activeBook
+    books, categoryBooks, activeBook
 })

@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {selectBook} from "../../AC";
 
@@ -16,8 +16,8 @@ const BookList = ({books, selectBook}) =>
     </div>
 
 BookList.PropTypes = {
-    books: PropTypes.array,
-    selectBook: PropTypes.func.isRequired,
+    books: propTypes.array,
+    selectBook: propTypes.func.isRequired,
 }
 
 export default connect(

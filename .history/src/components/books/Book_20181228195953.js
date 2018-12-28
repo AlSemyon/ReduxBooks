@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 const Book = ({book, cat}) => 
     <div>
         <h2>{book.title}</h2>
-        <p> Category:{cat[book.categoryId].title} </p>
+        <p> Category:{} </p>
         <p> Description:{book.description} </p>
     </div>
 
